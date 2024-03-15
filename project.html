@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Makes Clever</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="error makes.png">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing:border-box ;
+        }
+        .one {
+            display: flex;
+            margin-top: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgba(33, 33, 214, 0.829);
+            margin-left: 20px ;
+        }
+        .one h3{
+            margin-top: 10px;
+        }
+        .one img{
+            height: 20px;
+            margin-top: 10px;
+       }
+         .one h4{
+            margin-top: 4px;
+        }
+        .three ul li {
+            display: inline-block;
+            margin: 0px 60px;
+            margin-right: -30px;
+            padding-left: 50px;
+            }
+            .three li a{
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                display: inline-block;
+                }
+                .four img{
+                    height: 40rem;
+                    width:84rem;
+                    overflow: none;
+                    outline: none;
+                }
+                .four h2{
+                    margin-top: -500px;
+                    margin-left: 580px;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    color: rgba(26, 23, 23, 0.726);
+                    font-size: 50px;
+                    font-weight: bolder;
+                }
+                .four h3{
+                    color: rgba(255, 255, 255, 0.836);
+                    text-align: justify;
+                    padding: 20px;
+                    font-weight: bold;
+                    text-align: center;
+                    font-size: 25px;
+                }
+                .four h4{
+                    display: inline-block;
+                    margin: 30px;
+                    margin-left: 300px ;
+                    border: 1px solid red;
+                    border-radius: 50px;
+                    padding: 20px;
+                }
+               .four h4 a{
+                text-decoration: none;
+                color: white;
+               }
+               .five h3{
+                  color: rgba(0, 0, 0, 0.712);
+                  font-style: normal;
+                 font-size: larger;
+                  padding: 10px;
+            text-align: justify;
+              }
+              .box{
+    background-color: greenyellow;
+height: 120px;
+width: 190px;
+margin-left: -20px;
+display: inline-block;
+border: 5px solid orangered;
+padding: 0%;
+}
+.box big h4{
+color: blue;
+font-size: 16px;
+padding-top: 15px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.box1{
+    height: 350px;
+width: 359px;
+background-color: rgb(20, 189, 105);
+display: inline-block;
+margin: 40px;
+font-size: 20px;
+border: 1px solid whitesmoke;
+border-radius: 25px;
+}
+.box1 p{
+    margin: 20px;
+    text-align: justify;
+}
+.box1 h2{
+    padding-top: 20px;
+    padding-left: 25px ;
+}
+.box1 b{
+    background-color: rgba(20, 194, 136, 0.87);
+    margin-left:20px;
+    border: 1px solid  rgba(20, 194, 136, 0.877);
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size:medium;
+}
+.box1 b a{
+text-decoration: none;
+}
+#logic {
+display: flex;
+flex-direction: row;
+background-color: rgba(0, 0, 0, 0.726);
+color: white;
+text-align: justify;
+height: 350px;
+ }
+ h5{
+    margin-left: 20px;
+    margin-top: -5px;
+ }
+ .box2 h4{
+    margin-top: 5px;
+        margin-left: 22px;
+        padding-top: 50px;
+    }
+    .box2 b{
+        margin: 20px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: justify;
+    }
+    #input{
+     outline: none;
+     border: 0.5px solid rgba(100, 94, 94, 0.767);
+     border-radius: 5px 0px 0px 5px;
+     background-color: rgba(197, 190, 190, 0.24);
+     padding: 10px;
+     width: 300px;
+     margin-left: -8px;
+     display: inline-block;
+    }
+    .overlay{
+        background-color: rgba(33, 33, 214, 0.829);
+        width: 100%;
+        height: 361%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity:0.6;
+        display: none;
+    }
+    .popupbox{
+        background-color: rgba(24, 21, 21, 0.815);
+        height: 870px;
+        width: 600px;
+        margin-top: -100px;
+        margin-left: 400px;
+        border: 1px solid;
+        border-radius: 28px;
+        position: absolute;
+        z-index: 2;
+        display: none;
+    }
+    .popupbox h2{
+        color: white;
+        padding: 50px;
+        padding-left: 180px;
+        font-size: 35px;
+        }
+     .form{
+        font-size: 35px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 8px;
+        background-color: rgba(109, 109, 201, 0.61);
+        border: 1px solid;
+        border-radius: 19px;
+        }
+        .form1{
+        font-size: 35px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 8px;
+        background-color: rgba(109, 109, 201, 0.61);
+        border: 1px solid;
+        border-radius: 19px;
+        margin-top: 75px;
+        margin-left: 15px;
+        }
+        .input{
+            outline: none;
+            padding-left: 260px;
+            padding: 20px;
+            margin-left: 180px;
+        }
+        .inbox{
+            padding: 10px;
+            width: 400px;
+            margin-left: -90px;
+            font-size: 20px;
+        }
+        .pass{
+            border: 1px solid;
+            border-radius: 3px;
+            padding: 10px;
+            width: 290px;
+            font-size: 43px;
+            margin-left: -45px;
+            background-color: rgba(109, 109, 201, 0.61);
+        }
+    </style>
+</head>
+<body style="background: rgba(235, 230, 230, 0.87);">
+    <div class="one"><h3>ERROR MAKES CLEVER ACADEMY</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="ph2.png">&nbsp;&nbsp;<h4>+91 8798023712 <br><span style="color: gray;">+91 8798023712</span></h4>&nbsp;&nbsp;<span style="font-size: 47px; margin-top:-12px;" >|</span>
+    <img src="wat2.png" height="85px" width="45px" >&nbsp;<h4>Mon-Fri:9:00AM-5:00PM<br><span style="color: gray;">Sat-Sun:Closed</span></h4>&nbsp;<span style="font-size: 47px; margin-top:-12px;" >|</span>
+    <img src="msg icon.png" height="45px" width="35px" >&nbsp;&nbsp;<h4>error@example.com<br><span style="color: gray;">info@gmailcom</span></h4>
+    </div>&nbsp;&nbsp;<hr>
+<br>
+    <div class="three">
+        <ul>
+         <li><a href="project.html">HOME</a></li>
+         <li><a href="Train.html">TRAINING COURSES</a></li>
+         <li><a href="branches.html">BRANCHES</a></li>
+         <li><a href="certify.html">CERTIFICATIONS</a></li>
+         <li><a href="caree.html">CAREERS</a></li>
+        <li><a href="conta.html" style="background-color: rgba(37, 37, 163, 0.377);
+            border: 0.3px solid rgba(37, 37, 163, 0.377);
+             border-radius: 50px;
+             padding: 5px;"><img src="msg icon.png" width="15px"height="18px" >&nbsp;CONTACT US</a></li>
+    </ul><br>
+    </div>
+    <center><button onclick="show()" class="form">Registration Form</button></center>
+    <div class="overlay"></div>
+    <div class="popupbox">
+        <h2 style="color: rgba(109, 109, 201, 0.61);">Registration Form</h2>
+        <form>
+        <div class="input">
+        <input type="text" class="inbox" placeholder="Name" required>
+        </div>
+        <div class="input">
+        <input type="email" class="inbox" placeholder="Email" required>
+        </div>
+        <div class="input">
+        <input type="number" class="inbox" placeholder="Phone" required>
+        </div>
+        <div class="input">
+        <select class="inbox">
+            <option>Select & Course</option>
+            <option>C</option>
+            <option>C++</option>
+            <option>Java</option>
+            <option>Python</option>
+            <option>Front-End</option>
+        </select>
+        </div>
+        <div class="input">
+        <textarea  class="inbox" placeholder="Messege" required></textarea>
+        </div>
+        <div class="input" style="margin-top: 15px;">
+        <input type="submit" value="submit" class="pass">
+        </div></form>
+        <button onclick="closepopupbox(event)" class="form1">Close</button>
+    </div>
+    <script src="javascript.js"></script><br>
+        <div class="four"><img src="software wallpaper.jfif">
+        <h2>Tech Company</h2>
+        <h3>Error Makes Clever Technologies is Best Software Training Institute with 100% Placement for IT Courses in Tirunelveli, Kovilpatti,Madurai and Thiruvengadam.</h3>
+
+          <h3>Our World best training in both basic and advanced courses makes you shine in the IT Industry. We reinforce every candidate who craves to modernize themselves with the technology updates. Undoubtedly, Errors Makes Clever Technologies helps them the right trail to reach their IT Dreams.</h3>
+            
+           <h3>Our Software training institute is focus our students Placement and their career growth !!!</h3>
+            <br>
+              <h4 style="margin-left: 600px; background-color: red;"><a href="branches.html">READ MORE</a></h4>
+            <h4 style="margin-left: -10px; background-color: blue; border: 1px solid blue;"><a href="conta.html">CONTACT US</a></h4>
+        </div><br>
+        <div class="five" ><h3>Error Makes Clever Technologies is one of the top <span style="color: black;">IT Training Institutes in</span> <span style="color: red;">Kovilpatti,Madurai,Thiruvengadam <span style="color: black;">and</span> Tirunelveli</span> specializing in all leading Software Technologies Providing best quality training solutions to Fresher and Experienced students. We are developing our students as a independent and dedicated employees through our Training. We have placed more than 6000 individuals in Top MNC’s through our training programs and so we are well-known as one of the best <span style="color: black;">Placements Training Institutes in Tamilnadu.</span></h3>
+            <h3>We offer professional career courses to eligible candidates and mold them into knowledgeable industry-expected skills. In our IT Training and Placement Institute in Tirunelveli, Kovilpatti and Virudhunagar. we cover the most popular IT courses with the most up-to-date curriculum. Because of the insufficient proficiency of the candidates, there will always be a skill gap in the industry for on-demand technologies. We place a greater emphasis on hands-on experience to ensure that our students outperform from the start. We conduct numerous mock interviews and assessments in order to compete in interviews to the best of our abilities. Our instructors provide our students with the necessary course knowledge to pass the technical rounds by providing them with numerous case studies and assignments.</h3>
+            </div>
+            <center><span style="color: blue;"><h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">We are at Glance</h1></span></center><br>
+            <center><div class="box"><big><h4><span style="font-size: 50px;">8+</span><br>Years of Training Exp</h4></big></div>
+            <div class="box"><big><h4><span style="font-size: 50px;">300+</span><br>Company Hiring</h4></big></div>
+            <div class="box"><big><h4><span style="font-size: 50px;">50K+</span><br>Trained students</h4></big></div>
+            <div class="box"><big><h4><span style="font-size: 50px;">86%</span><br>Placed Students Ratio</h4></big></div>
+            <div class="box"><big><h4><span style="font-size: 50px;">3+</span><br>Live Branches</h4></big></div>
+            <div class="box"><big><h4><span style="font-size: 50px;">500+</span><br>Software Courses</h4></big></div>
+            <div class="box"><big><h4><span style="font-size: 50px;">100+</span><br>Trainers</h4></big></div></center><br>
+            
+            <center><h1 style="color: blue;">WHY ERROR MAKES CLEVER TECHNOLOGIES IS BEST TRAINING INSTITUTE </h1><br>
+            <p style="font-size: 18px;">If you are looking premium quality Software Training and Placements in Tirunelveli, Kovilpatti and Madurai, you are right place! We offer outstanding package for all!</p></center><br>
+            <div class="box1"><h2 style="color: red;">Online Training</h2><br><p>Error Makes Clever Technologies is offering Online Software Training and Placements by Industry Experts. You can gain the knowledge from anywhere of the world. We are using zoom, Google Meet and WebEx Platform to take the Online Classes.</p><br><b><a href="caree.html">Learn More&nbsp;></a></b></div>
+            </div>
+            <div class="box1"><h2 style="color: blue;">Classroom Training</h2><br><p>Error Makes clever Technologies is offering Classroom session based Software Training and Placements in Tirunelveli and Kovilpatti Location by Industry Experts. Our classrooms are well equipped by Air conditioned, Projectors and Lab Facility.</p><br><b><a href="caree.html">Learn More&nbsp;></a></b></div>
+            <div class="box1"><h2 style="color: red">E-Learning Technologies</h2><br><p>Error makes clever Technologies is offering Recorded Software Training and Placements by Industry Experts. Our Pre-recorded session has been upgraded in every week based on latest Syllabus. You can download materials lifetime.</p><br><b><a href="caree.html">Learn More&nbsp;></a></b></div>
+
+            <footer><div id="logic"><div class="box2">
+                <h4>KOVILPATTI BRANCH</h4><br>
+                <b>Address:971P/6,Kalki&nbsp;Street,Manthithoppu&nbsp;Road,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sigamani
+                 Nagar,Kovilpatti–628502</b><br><br>
+                <b>Landmark:After six veedu Line</b><br><br>
+                <b>Contact No:+91 89378 54678</b><br><br>
+                <b>Email:enquiry@errormakes.in</b><br><br>
+                <b>Office Timing:8AM–10PM</b></div>
+            
+                <div class="box2"><h4>THIRUNELVELI BRANCH</h4><br>
+                <b>Address:931P/6,Raji Street,Main Road,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kamaraj
+                 Nagar,Nellai–627719</b><br><br>
+                <b>Landmark:Main&nbsp;Murugan&nbsp;Temple&nbsp;Line</b><br><br>
+                <b>Contact No: +91 83411 67892</b><br><br>
+                <b>Email: enquiry@errormakes.in</b><br><br>
+                <b>Office Timing:8AM–10PM</b>
+            </div>
+            
+            <div class="box2"><h4>MADURAI BRANCH</h4><br>
+                <b>Address:81P/6,BSE Street,Theni Road,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eagle
+                 Nagar,Madurai–622871</b><br><br>
+                <b>Landmark:Main&nbsp;Auto&nbsp;Stand&nbsp;Line</b><br><br>
+                <b>Contact No: +91 84389 89012</b><br><br>
+                <b>Email: enquiry@errormakes.in</b><br><br>
+                <b>Office Timing:8AM–10PM</b>
+            </div>
+            
+            <div class="box2"><h4>THIRUVENGADAM BRANCH</h4><br>
+                <b>Address: 74P/6, Gandhi Street, Thiya Road,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bose
+                 Nagar,Thenkasi–627713</b><br><br>
+                <b>Landmark: Main Taj Hotel Line</b><br><br>
+                <b>Contact No: +91 89989 65782</b><br><br>
+                <b>Email: enquiry@errormakes.in</b><br><br>
+                <b>Office Timing:8AM–10PM</b>
+            </div></div>
+</body>
+</html>
